@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""Import a function and use it to add two numbers"""
+
 from add_0 import add
+
 if __name__ == "__main__":
     a = 1
     b = 2

@@ -1,13 +1,17 @@
 #!/usr/bin/python3
+"""Print the number of and list of command-line arguments"""
+
 import sys
+
+
 if __name__ == "__main__":
-    number = len(sys.argv) - 1
-    if number == 0:
+    args = sys.argv[1:]  # Exclude the script name
+    count = len(args)
+
+    if count == 0:
         print("0 arguments.")
-    elif number == 1:
-        print("{} argument:".format(number))
-        print("{}: {}".format(number, sys.argv[number]))
     else:
-        print("{} arguments:".format(number))
-        for i in range(1, number + 1):
-            print("{}: {}".format(i, sys.argv[i]))
+        word = "argument" if count == 1 else "arguments"
+        print("{} {}:".format(count, word))
+        for i, arg in enumerate(args, 1):
+            print("{}: {}".format(i, arg))
