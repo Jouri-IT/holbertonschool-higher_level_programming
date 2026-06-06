@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""Print the sum of all command-line arguments"""
-
-import sys
-
 if __name__ == "__main__":
-    args = sys.argv[1:]  # exclude script name
+    import sys
+
     total = 0
+    for i in range(1, len(sys.argv)):
+        total += int(sys.argv[i])
 
-    for arg in args:
-        total += int(arg)
-
-    print(total)
+    print("{}".format(total))
