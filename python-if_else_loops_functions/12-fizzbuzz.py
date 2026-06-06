@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    for number in range(1, 101):
-        if number % 3 == 0 and number % 5 == 0:
+    """
+    Prints the numbers from 1 to 100 separated by a space.
+    For multiples of three, prints Fizz instead of the number.
+    For multiples of five, prints Buzz instead of the number.
+    For multiples of both three and five, prints FizzBuzz.
+    """
+    for i in range(1, 101):
+        if i % 3 == 0 and i % 5 == 0:
             print("FizzBuzz", end=" ")
-            continue
-        elif number % 3 == 0:
+        elif i % 3 == 0:
             print("Fizz", end=" ")
-            continue
-        elif number % 5 == 0:
+        elif i % 5 == 0:
             print("Buzz", end=" ")
-            continue
         else:
-            print(number, end=" ")
+            print("{}".format(i), end=" ")

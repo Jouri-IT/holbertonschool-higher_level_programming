@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def islower(c):
-    if ord(c) > 96 and ord(c) < 123:
-        return True
-    else:
-        return False
+    """
+    Checks if the character c is lowercase.
+
+    Returns True if c is lowercase, False otherwise.
+    """
+    return ord('a') <= ord(c) <= ord('z')
