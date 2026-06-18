@@ -224,9 +224,3 @@ for the test-driven-development project, run doctests with:
 ```bash
 python3 -m doctest -v tests/0-add_integer.txt
 ```
-
----
-
-## academic context
-
-coursework completed as part of the **Holberton School × Tuwaiq Academy** software engineering traineeship.
